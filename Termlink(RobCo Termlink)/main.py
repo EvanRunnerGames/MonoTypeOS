@@ -230,7 +230,34 @@ def system():
             print("NEVER NEED TO DO THAT IN TERMLINK OS because all files are .txt but then compile to other file types the custom command")
             print("is going to be the files name so now you can type the files name and it will run automatically as a command\n")
 
-            #THIS IS FOR THE HELP COMMANDS OF THE COMMANDS
+        #THIS IS FOR THE HELP COMMANDS OF THE COMMANDS
+
+        #THIS IS FOR THE CUSTOM COMMANDS
+
+        #ccl stands for custom command lines lines
+
+        # Read the number of custom commands from the file
+        ccl = int(linecache.getline('cc.txt', 1).strip())
+        customcommands = []
+
+        # Load custom commands from the file
+        for i in range(ccl):
+            command = linecache.getline('cc.txt', i + 2).strip()  # Read and strip newlines and whitespace
+            customcommands.append(command)
+
+        if ui in customcommands:
+            try:
+                # Open the corresponding command file and execute its Python code
+                with open(f"{ui}.txt", "r") as file:
+                    python_code = file.read().replace("||", "\n")
+                    print('\n')
+                    exec(python_code)
+            except Exception as e:
+                # If there's an error, print it with colors for visibility
+                print(Back.RED + Fore.WHITE + "ERROR IN COMPILING" + orange + Back.RESET)
+                print(f"Compilation Error: {e}")
+
+
             
                 
 
