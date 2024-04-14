@@ -121,12 +121,110 @@ def termilink():
     print(R"| '--------------' || '--------------' || '--------------' || '--------------' || '--------------' || '--------------' || '--------------' || '--------------' |")
     print(R" '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------' ")    
 
+def gamestxt():
+    print(R".----------------.  .----------------.  .----------------.  .----------------.  .----------------.")
+    time.sleep(0.1)
+    reset()
+
+    print(R".----------------.  .----------------.  .----------------.  .----------------.  .----------------.")
+    print(R"| .--------------. || .--------------. || .--------------. || .--------------. || .--------------. |")
+    time.sleep(0.1)
+    reset()
+
+    print(R".----------------.  .----------------.  .----------------.  .----------------.  .----------------.")
+    print(R"| .--------------. || .--------------. || .--------------. || .--------------. || .--------------. |")
+    print(R"| |    ______    | || |      __      | || | ____    ____ | || |  _________   | || |    _______   | |")
+    time.sleep(0.1)
+    reset()
+
+    print(R".----------------.  .----------------.  .----------------.  .----------------.  .----------------.")
+    print(R"| .--------------. || .--------------. || .--------------. || .--------------. || .--------------. |")
+    print(R"| |    ______    | || |      __      | || | ____    ____ | || |  _________   | || |    _______   | |")
+    print(R"| |  .' ___  |   | || |     /  \     | || ||_   \  /   _|| || | |_   ___  |  | || |   /  ___  |  | |")
+    time.sleep(0.1)
+    reset()
+
+    print(R".----------------.  .----------------.  .----------------.  .----------------.  .----------------.")
+    print(R"| .--------------. || .--------------. || .--------------. || .--------------. || .--------------. |")
+    print(R"| |    ______    | || |      __      | || | ____    ____ | || |  _________   | || |    _______   | |")
+    print(R"| |  .' ___  |   | || |     /  \     | || ||_   \  /   _|| || | |_   ___  |  | || |   /  ___  |  | |")
+    print(R"| | / .'   \_|   | || |    / /\ \    | || |  |   \/   |  | || |   | |_  \_|  | || |  |  (__ \_|  | |")
+    time.sleep(0.1)
+    reset()
+
+    print(R".----------------.  .----------------.  .----------------.  .----------------.  .----------------.")
+    print(R"| .--------------. || .--------------. || .--------------. || .--------------. || .--------------. |")
+    print(R"| |    ______    | || |      __      | || | ____    ____ | || |  _________   | || |    _______   | |")
+    print(R"| |  .' ___  |   | || |     /  \     | || ||_   \  /   _|| || | |_   ___  |  | || |   /  ___  |  | |")
+    print(R"| | / .'   \_|   | || |    / /\ \    | || |  |   \/   |  | || |   | |_  \_|  | || |  |  (__ \_|  | |")
+    print(R"| | | |    ____  | || |   / ____ \   | || |  | |\  /| |  | || |   |  _|  _   | || |   '.___`-.   | |")
+    time.sleep(0.1)
+    reset()
+
+    print(R".----------------.  .----------------.  .----------------.  .----------------.  .----------------.")
+    print(R"| .--------------. || .--------------. || .--------------. || .--------------. || .--------------. |")
+    print(R"| |    ______    | || |      __      | || | ____    ____ | || |  _________   | || |    _______   | |")
+    print(R"| |  .' ___  |   | || |     /  \     | || ||_   \  /   _|| || | |_   ___  |  | || |   /  ___  |  | |")
+    print(R"| | / .'   \_|   | || |    / /\ \    | || |  |   \/   |  | || |   | |_  \_|  | || |  |  (__ \_|  | |")
+    print(R"| | | |    ____  | || |   / ____ \   | || |  | |\  /| |  | || |   |  _|  _   | || |   '.___`-.   | |")
+    print(R"| | \ `.___]  _| | || | _/ /    \ \_ | || | _| |_\/_| |_ | || |  _| |___/ |  | || |  |`\____) |  | |")
+    time.sleep(0.1)
+    reset()
+
+    print(R".----------------.  .----------------.  .----------------.  .----------------.  .----------------.")
+    print(R"| .--------------. || .--------------. || .--------------. || .--------------. || .--------------. |")
+    print(R"| |    ______    | || |      __      | || | ____    ____ | || |  _________   | || |    _______   | |")
+    print(R"| |  .' ___  |   | || |     /  \     | || ||_   \  /   _|| || | |_   ___  |  | || |   /  ___  |  | |")
+    print(R"| | / .'   \_|   | || |    / /\ \    | || |  |   \/   |  | || |   | |_  \_|  | || |  |  (__ \_|  | |")
+    print(R"| | | |    ____  | || |   / ____ \   | || |  | |\  /| |  | || |   |  _|  _   | || |   '.___`-.   | |")
+    print(R"| | \ `.___]  _| | || | _/ /    \ \_ | || | _| |_\/_| |_ | || |  _| |___/ |  | || |  |`\____) |  | |")
+    print(R"| |  `._____.'   | || ||____|  |____|| || ||_____||_____|| || | |_________|  | || |  |_______.'  | |")
+    time.sleep(0.1)
+    reset()
+
+    print(R".----------------.  .----------------.  .----------------.  .----------------.  .----------------.")
+    print(R"| .--------------. || .--------------. || .--------------. || .--------------. || .--------------. |")
+    print(R"| |    ______    | || |      __      | || | ____    ____ | || |  _________   | || |    _______   | |")
+    print(R"| |  .' ___  |   | || |     /  \     | || ||_   \  /   _|| || | |_   ___  |  | || |   /  ___  |  | |")
+    print(R"| | / .'   \_|   | || |    / /\ \    | || |  |   \/   |  | || |   | |_  \_|  | || |  |  (__ \_|  | |")
+    print(R"| | | |    ____  | || |   / ____ \   | || |  | |\  /| |  | || |   |  _|  _   | || |   '.___`-.   | |")
+    print(R"| | \ `.___]  _| | || | _/ /    \ \_ | || | _| |_\/_| |_ | || |  _| |___/ |  | || |  |`\____) |  | |")
+    print(R"| |  `._____.'   | || ||____|  |____|| || ||_____||_____|| || | |_________|  | || |  |_______.'  | |")
+    print(R"| |              | || |              | || |              | || |              | || |              | |")
+    time.sleep(0.1)
+    reset()
+
+    print(R".----------------.  .----------------.  .----------------.  .----------------.  .----------------.")
+    print(R"| .--------------. || .--------------. || .--------------. || .--------------. || .--------------. |")
+    print(R"| |    ______    | || |      __      | || | ____    ____ | || |  _________   | || |    _______   | |")
+    print(R"| |  .' ___  |   | || |     /  \     | || ||_   \  /   _|| || | |_   ___  |  | || |   /  ___  |  | |")
+    print(R"| | / .'   \_|   | || |    / /\ \    | || |  |   \/   |  | || |   | |_  \_|  | || |  |  (__ \_|  | |")
+    print(R"| | | |    ____  | || |   / ____ \   | || |  | |\  /| |  | || |   |  _|  _   | || |   '.___`-.   | |")
+    print(R"| | \ `.___]  _| | || | _/ /    \ \_ | || | _| |_\/_| |_ | || |  _| |___/ |  | || |  |`\____) |  | |")
+    print(R"| |  `._____.'   | || ||____|  |____|| || ||_____||_____|| || | |_________|  | || |  |_______.'  | |")
+    print(R"| |              | || |              | || |              | || |              | || |              | |")
+    print(R"| '--------------' || '--------------' || '--------------' || '--------------' || '--------------' |")
+    time.sleep(0.1)
+    reset()
+
+    print(R".----------------.  .----------------.  .----------------.  .----------------.  .----------------.")
+    print(R"| .--------------. || .--------------. || .--------------. || .--------------. || .--------------. |")
+    print(R"| |    ______    | || |      __      | || | ____    ____ | || |  _________   | || |    _______   | |")
+    print(R"| |  .' ___  |   | || |     /  \     | || ||_   \  /   _|| || | |_   ___  |  | || |   /  ___  |  | |")
+    print(R"| | / .'   \_|   | || |    / /\ \    | || |  |   \/   |  | || |   | |_  \_|  | || |  |  (__ \_|  | |")
+    print(R"| | | |    ____  | || |   / ____ \   | || |  | |\  /| |  | || |   |  _|  _   | || |   '.___`-.   | |")
+    print(R"| | \ `.___]  _| | || | _/ /    \ \_ | || | _| |_\/_| |_ | || |  _| |___/ |  | || |  |`\____) |  | |")
+    print(R"| |  `._____.'   | || ||____|  |____|| || ||_____||_____|| || | |_________|  | || |  |_______.'  | |")
+    print(R"| |              | || |              | || |              | || |              | || |              | |")
+    print(R"| '--------------' || '--------------' || '--------------' || '--------------' || '--------------' |")
+    print(R" '----------------'  '----------------'  '----------------'  '----------------'  '----------------' ")
+    time.sleep(0.5)
 
 
 #ui stands for user input
 global ui
 #this is the commands list that stores all the commands
-commands = "\rrestart\nhelp\ntime\nfileread\nfilecreate\ndestroy\nrun\nfilelist\ndeletefile\nfilefix\nmoreinfo"
+commands = "\rrestart\nhelp\ntime\nfileread\nfilecreate\ndestroy\nrun\nfilelist\nfiledelete\nfilefix\nmoreinfo\ngames\nclear\n"
 
 
 
@@ -161,22 +259,22 @@ def system():
         if ui == "destroy":
             run = False
         if ui == "fileread":
-            lr = input("what log would you like to read: ")
+            lr = input("what file would you like to read: ")
             fileco = linecache.getline(f"{lr}.txt", 1)
             print('\n' + fileco.replace("||", "\n"))
         if ui == "filecreate":
-            ln = input("Log Name: ")
+            ln = input("File Name: ")
 
-            li =  input("type in the log || to create a new line: ")
+            li =  input("type in the file || to create a new line: ")
 
-            with open(f"{ln}.txt", "w") as log:
-                log.write(li)
+            with open(f"{ln}.txt", "w") as file:
+                file.write(li)
         if ui == "run":
             try:
-                ftr = input("Enter the file/log to run: ")
+                ftr = input("Enter the file to run: ")
 
-                with open(f"{ftr}.txt", "r") as log:
-                    python_code = log.read().replace("||", "\n")
+                with open(f"{ftr}.txt", "r") as file:
+                    python_code = file.read().replace("||", "\n")
                     exec(python_code)
             except:
                 print(Back.RED + Fore.WHITE + "ERROR IN COMPILING" + orange + Back.RESET)
@@ -194,11 +292,15 @@ def system():
                 print(file)
             print('\n')
 
-        if ui == "deletefile":
+        if ui == "filedelete":
             #this stands for what file to delete
             wftd = input("What file would you like to delete: ")
             try:
                 os.remove(f"{wftd}.txt")
+                if wftd == "cc":
+                    print(Back.RED + Fore.WHITE + "\n\nERROR CC NOT FOUND:\nPOWER OFF YOUR SYSTEM THEN POWER BACK ON TO GET CC BACK ITS A REQUIRED FILE\n\n" + orange + Back.RESET)
+                    print(orange)
+                    print()
             except FileNotFoundError:
                 print(Back.RED + Fore.WHITE + "ERROR THIS FILE DOES NOT EXIST" + orange + Back.RESET)
                 print(orange)
@@ -229,6 +331,29 @@ def system():
             print("then write the file that you want to cc to run simple as that you do NOT NEED TO PUT THE FILE EXTINSION you will most likely")
             print("NEVER NEED TO DO THAT IN TERMLINK OS because all files are .txt but then compile to other file types the custom command")
             print("is going to be the files name so now you can type the files name and it will run automatically as a command\n")
+        
+        if ui == "games":
+            gamestxt()
+            print("1.GUESSING GAME")
+
+            def load_and_execute():
+                try:
+                    with open('guessinggame.txt', 'r') as file:
+                        minesweeper_code = file.read()
+                        exec(python_code)
+                except:
+                    print(Back.RED + Fore.WHITE + "ERROR IN COMPILING GAME: GAME CODE HAS ERRORS" + orange + Back.RESET)
+                    print("\n")
+            
+            ui = input("ENTER THE NUMBER OF THE GAME TO PLAY RESTART TO GO BACK: ")
+            if ui == "1":
+                load_and_execute()
+        if ui == "clear":
+            termilink()
+
+            
+
+
 
         #THIS IS FOR THE HELP COMMANDS OF THE COMMANDS
 
@@ -237,25 +362,31 @@ def system():
         #ccl stands for custom command lines lines
 
         # Read the number of custom commands from the file
-        ccl = int(linecache.getline('cc.txt', 1).strip())
-        customcommands = []
 
-        # Load custom commands from the file
-        for i in range(ccl):
-            command = linecache.getline('cc.txt', i + 2).strip()  # Read and strip newlines and whitespace
-            customcommands.append(command)
+        try:
+            ccl = int(linecache.getline('cc.txt', 1).strip())
+            customcommands = []
 
-        if ui in customcommands:
-            try:
-                # Open the corresponding command file and execute its Python code
-                with open(f"{ui}.txt", "r") as file:
-                    python_code = file.read().replace("||", "\n")
-                    print('\n')
-                    exec(python_code)
-            except Exception as e:
-                # If there's an error, print it with colors for visibility
-                print(Back.RED + Fore.WHITE + "ERROR IN COMPILING" + orange + Back.RESET)
-                print(f"Compilation Error: {e}")
+            # Load custom commands from the file
+            for i in range(ccl):
+                command = linecache.getline('cc.txt', i + 2).strip()  # Read and strip newlines and whitespace
+                customcommands.append(command)
+
+            if ui in customcommands:
+                try:
+                    # Open the corresponding command file and execute its Python code
+                    with open(f"{ui}.txt", "r") as file:
+                        python_code = file.read().replace("||", "\n")
+                        print('\n')
+                        exec(python_code)
+                except:
+                    # If there's an error, print it with colors for visibility
+                    print(Back.RED + Fore.WHITE + "ERROR IN COMPILING" + orange + Back.RESET)
+                    print("\n")
+        except:
+            print(Back.RED + Fore.WHITE + "ERROR WITH CUSTOM COMMANDS: FIX DELETE cc" + orange + Back.RESET)
+            print("\n")
+            
 
 
             
@@ -360,6 +491,16 @@ def boot():
         else:
             with open(file_path, 'w') as file:
                 file.write("0")
+
+#        config_path = 'config.txt'
+#
+#        if files:
+#            pass
+#        else:
+#            with open(config_path, 'w') as file:
+#                file.write("textcolor=orange\nPOSSIBLE COLORS: orange, red , green, blue, and yellow")
+
+
 
         try:
             tape.play()
