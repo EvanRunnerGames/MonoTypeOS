@@ -1,0 +1,33 @@
+@font-face{
+    font-family: 'termlink';
+    src: url('termlink.ttf') format('truetype');
+}
+
+* {
+    font-family: 'termlink', sans-serif;
+    text-align: center;
+    color: black;
+}
+
+.file {
+    border-radius: 6px;
+    background-color: transparent;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: large;
+    text-align: left;
+    
+}
+
+.file:hover {
+    cursor: pointer;
+    transition: all 0.25s;
+    box-shadow: inset 0 0 10px black;
+    color: rgb(89, 89, 89);
+}
+
+.info {
+    width: 100%;
+    height: 400px;
+}
