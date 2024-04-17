@@ -6,6 +6,7 @@ import linecache
 import colorama
 from colorama import Fore, Back
 import glob
+import random
 
 pygame.init()
 colorama.init()
@@ -30,6 +31,79 @@ def reset():
 
 #This makes all text orange
 print(orange)
+
+def minesweeper():
+    def create_board(dim_size, num_mines):
+        board = [[0 for _ in range(dim_size)] for _ in range(dim_size)]
+        mines_planted = 0
+        while mines_planted < num_mines:
+            loc = random.randint(0, dim_size**2 - 1)
+            row, col = divmod(loc, dim_size)
+
+            if board[row][col] == '*':
+                continue
+            
+            board[row][col] = '*'  # Plant mine
+            mines_planted += 1
+
+        return board
+
+    def add_numbers(board):
+        dim_size = len(board)
+        directions = [(-1, -1), (-1, 0), (-1, 1),
+                    (0, -1),         (0, 1),
+                    (1, -1), (1, 0), (1, 1)]
+
+        for row in range(dim_size):
+            for col in range(dim_size):
+                if board[row][col] == '*':
+                    continue
+                mine_count = 0
+                for dr, dc in directions:
+                    r, c = row + dr, col + dc
+                    if 0 <= r < dim_size and 0 <= c < dim_size and board[r][c] == '*':
+                        mine_count += 1
+                board[row][col] = mine_count
+
+    def print_board(board):
+        for row in board:
+            print(" ".join(str(cell) for cell in row))
+
+    def play(dim_size=10, num_mines=20):
+        board = create_board(dim_size, num_mines)
+        add_numbers(board)
+        safe_spots = dim_size * dim_size - num_mines
+        uncovered_spots = 0
+        revealed_board = [[' ' for _ in range(dim_size)] for _ in range(dim_size)]
+
+        while True:
+            print_board(revealed_board)
+            try:
+                row, col = map(int, input("Enter row and column to reveal: ").split())
+                if str(row) == "back" or str(col) == "back":
+                    termilink()
+                reset()
+                assert 0 <= row < dim_size and 0 <= col < dim_size
+            except (ValueError, AssertionError):
+                print("Invalid input. Please use zero-based index.")
+                continue
+
+            if board[row][col] == '*':
+                print("Game Over!")
+                print_board(board)  # Reveal the board
+                break
+
+            revealed_board[row][col] = str(board[row][col])
+            uncovered_spots += 1
+
+            if uncovered_spots == safe_spots:
+                print("Congratulations! You have won!")
+                termilink()
+                break
+
+    if __name__ == "__main__":
+        play()
+
 
 def termilink():
     print(R" .----------------.  .----------------.  .----------------.  .----------------.  .----------------.  .----------------.  .-----------------. .----------------.")
@@ -334,20 +408,20 @@ def system():
         
         if ui == "games":
             gamestxt()
-            print("1.GUESSING GAME")
+            print("1.MINESWEEPER")
 
             def load_and_execute():
                 try:
-                    with open('guessinggame.txt', 'r') as file:
-                        minesweeper_code = file.read()
-                        exec(python_code)
+                    minesweeper()
                 except:
-                    print(Back.RED + Fore.WHITE + "ERROR IN COMPILING GAME: GAME CODE HAS ERRORS" + orange + Back.RESET)
-                    print("\n")
+                    print(Back.RED + Fore.WHITE + "ERROR ABORTING: GAME FILES CORRUPTED" + orange + Back.RESET)
+                    print(orange)
             
-            ui = input("ENTER THE NUMBER OF THE GAME TO PLAY RESTART TO GO BACK: ")
+            ui = input("ENTER THE NUMBER OF THE GAME TO PLAY back TO GO BACK: ")
             if ui == "1":
                 load_and_execute()
+            if ui == "clear":
+                termilink()
         if ui == "clear":
             termilink()
 
