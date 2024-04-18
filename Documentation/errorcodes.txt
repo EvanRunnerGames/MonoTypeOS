@@ -1,9 +1,9 @@
-ERROR IN COMPILING;<br>
-This error code just means the code you have written had errors and could not compile to output<br>
+ERROR IN COMPILING; 
+This error code just means the code you have written had errors and could not compile to output 
 
-ERROR CC NOT FOUND:POWER OFF YOUR SYSTEM THEN POWER BACK ON TO GET CC BACK ITS A REQUIRED FILE;<br>
-This error means you have deleted a system important file SOME OR ALL commands may not work without it because<br>
-it checks this file for custom commands and if it gets an error it can't even check for the rest of commands<br>
+ERROR CC NOT FOUND:POWER OFF YOUR SYSTEM THEN POWER BACK ON TO GET CC BACK ITS A REQUIRED FILE; 
+This error means you have deleted a system important file SOME OR ALL commands may not work without it because 
+it checks this file for custom commands and if it gets an error it can't even check for the rest of commands 
 
 ERROR THIS FILE DOES NOT EXIST;
 This means the file does not exist on your system
