@@ -1,1 +1,3 @@
-COMING SOON
+ISOimages will be here when the os is done but currently TermLink is
+in a alpha, so its not even yet at beta 19 more updates to go until the
+full OS release
