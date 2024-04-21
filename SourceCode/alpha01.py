@@ -13,8 +13,11 @@ colorama.init()
 
 global start
 
-start = pygame.mixer.Sound("boot.mp3")
-tape = pygame.mixer.Sound("background.mp3")
+try:
+    start = pygame.mixer.Sound("boot.mp3")
+    tape = pygame.mixer.Sound("background.mp3")
+except:
+    pass
 
 orange = '\x1b[38;2;255;165;0m'
 
