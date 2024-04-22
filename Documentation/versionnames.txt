@@ -1,3 +1,9 @@
 
+alpha02:
+This is the update that added the terminal look like a linux terminal kinda where you have the users name
+but here is the code that made it happen, ui = input(f'termilink#{Fore.BLUE}{user}{orange}~ ').lower().strip()
+but also fixed bug fixes and also changed to boot screen to just say BOOTING... while checking for needed system files
+then restarts the terminal and boots into system function
+
 alpha01: 
-This is the oldest version and the first of termlink having the most basic things like file creation file reading and games 
+This is the oldest version and the first of termliink having the most basic things like file creation file reading and games 
