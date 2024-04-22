@@ -1,12 +1,10 @@
 import os
 import datetime
-import pygame
 import linecache
 import colorama
 from colorama import Fore, Back
 import glob
 
-pygame.init()
 colorama.init()
 
 global start
@@ -33,7 +31,8 @@ print(orange)
 #ui stands for user input
 global ui
 #this is the commands list that stores all the commands
-commands = "\nhelp\ntime\nfileread\nfilecreate\ndestroy\nrun\nfilelist\nfiledelete\nfilefix\nmoreinfo\ngames\nclear\n"
+global page1
+page1 = "\nhelp\ntime\nfileread\nfilecreate\nrun\nfilelist\nfiledelete\nfilefix\ncustom commands\nclear\n"
 
 
 
@@ -52,16 +51,14 @@ def system():
         time = datetime.datetime.now()
 
 
-        ui = input(f'termilink#{Fore.BLUE}{user}{orange}~ ').lower().strip()
+        ui = input(f'termilink#{Fore.BLUE}{user}{orange}~ ').lower().strip(' ')
 
 
         if ui == "help":
-            print(commands)
+            print(page1)
             print("for more information on a specific command type the commands name and help like filefix+help\n")
         if ui == "time":
             print(f"The the current date and time is: {time}")
-        if ui == "destroy":
-            run = False
         if ui == "fileread":
             lr = input("what file would you like to read: ")
             fileco = linecache.getline(f"{lr}.txt", 1)
@@ -139,6 +136,10 @@ def system():
         if ui == "clear":
             clear()
 
+        if ui.startswith("echo "):  # Check if the input starts with 'echo'
+            ui = ui.strip('echo ')
+            print(ui)  # Output the remaining part of the string
+
             
 
 
@@ -177,6 +178,7 @@ def system():
             
 
 def boot():
+    clear()
     print("BOOTING...")
     file_path = 'cc.txt'
     files = glob.glob(file_path)
