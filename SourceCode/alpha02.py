@@ -13,8 +13,8 @@ global user
 
 orange = '\x1b[38;2;255;165;0m'
 
-def termilink():
-    print("Welcome to EvanRunnerStudios (TM) TermiLink")
+def MonoType():
+    print("Welcome to EvanRunnerStudios (TM) MonoType")
 
 
 
@@ -37,7 +37,7 @@ page1 = "\nhelp\ntime\nfileread\nfilecreate\nrun\nfilelist\nfiledelete\nfilefix\
 
 
 def system():
-    termilink()
+    MonoType()
     print("Type help for a list of commands!\n")
 
     #this is for if the system is running
@@ -51,7 +51,7 @@ def system():
         time = datetime.datetime.now()
 
 
-        ui = input(f'termilink#{Fore.BLUE}{user}{orange}~ ').lower().strip(' ')
+        ui = input(f'MonoType#{Fore.BLUE}{user}{orange}~ ').lower().strip(' ')
 
 
         if ui == "help":
@@ -123,14 +123,14 @@ def system():
                 print(orange)
             
         if ui == "moreinfo":
-            print("\ntermilink is a terminal based os made in python and can execute python code")
-            print("termilink also is linux based if your running this as your os it has it an boots it automatically")
-            print("termilink is made by Evan Runner Pason as an online alias")
-            print("termilink has Some Important features you can utilize such as custom commands if this file is not already there")
+            print("\nMonoType is a terminal based os made in python and can execute python code")
+            print("MonoType also is linux based if your running this as your os it has it an boots it automatically")
+            print("MonoType is made by Evan Runner Pason as an online alias")
+            print("MonoType has Some Important features you can utilize such as custom commands if this file is not already there")
             print("you can create it yourself do filecreate the file name is cc for custom commands then you can write in that file")
             print("for the first line write the ammount of custom commands you will be using then like 1 or 2 then do || for the next line")
             print("then write the file that you want to cc to run simple as that you do NOT NEED TO PUT THE FILE EXTINSION you will most likely")
-            print("NEVER NEED TO DO THAT IN termilink OS because all files are .txt but then compile to other file types the custom command")
+            print("NEVER NEED TO DO THAT IN MonoType OS because all files are .txt but then compile to other file types the custom command")
             print("is going to be the files name so now you can type the files name and it will run automatically as a command\n")
 
         if ui == "clear":
