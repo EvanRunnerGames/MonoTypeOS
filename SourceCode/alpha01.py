@@ -399,14 +399,14 @@ def system():
                 print(orange)
             
         if ui == "moreinfo":
-            print("\nTERMLINK is a terminal based os made in python and can execute python code")
-            print("TERMLINK also is linux based if your running this as your os it has it an boots it automatically")
-            print("TERMLINK is made by Jacob Allen B****** but usually goes by Evan Runner Pason as an online alias")
-            print("TERMLINK has Some Important features you can utilize such as custom commands if this file is not already there")
+            print("\nMonoType is a terminal based os made in python and can execute python code")
+            print("MonoType also is linux based if your running this as your os it has it an boots it automatically")
+            print("MonoType is made by Jacob Allen B****** but usually goes by Evan Runner Pason as an online alias")
+            print("MonoType has Some Important features you can utilize such as custom commands if this file is not already there")
             print("you can create it yourself do filecreate the file name is cc for custom commands then you can write in that file")
             print("for the first line write the ammount of custom commands you will be using then like 1 or 2 then do || for the next line")
             print("then write the file that you want to cc to run simple as that you do NOT NEED TO PUT THE FILE EXTINSION you will most likely")
-            print("NEVER NEED TO DO THAT IN TERMLINK OS because all files are .txt but then compile to other file types the custom command")
+            print("NEVER NEED TO DO THAT IN MonoType OS because all files are .txt but then compile to other file types the custom command")
             print("is going to be the files name so now you can type the files name and it will run automatically as a command\n")
         
         if ui == "games":
